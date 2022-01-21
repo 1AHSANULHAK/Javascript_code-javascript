@@ -1,0 +1,43 @@
+<html>
+<head> 
+<h1> Javascript Events </h1>
+</head>
+<body>
+<script language="Javascript" type="text/Javascript">
+
+	function mouseoverevent()
+	{
+		alert("This is Events occur");
+	}
+	
+</script>
+<p onmouseover="mouseoverevent()"> Keep cursor over me</p>
+</body>
+</html>
+
+ 
+<html>
+<head></head>
+<body onblur =" window.alert("window is successfully blur");">
+    <h1>this is focus events</h1>
+    <input type="text" id = "input" onfocus="focusevent()"/>
+    <script>
+document.getElementById("input").style.background="aqua";
+
+    </script>
+    <input type="text" id="input" onkeydown="onkey()"/>
+
+
+<script>
+function onkey();
+{
+
+alert("hello")
+
+}
+
+</script>
+
+
+</body>
+</html>

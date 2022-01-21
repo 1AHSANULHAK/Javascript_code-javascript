@@ -1,0 +1,40 @@
+<html
+<head></head
+
+<body>
+<title>count odd,even,prime no. bet’n 1 to 100</title>
+<script language = “javascript”>
+var i,flag=1,odd=0,even=0,prime=0,num=2;
+while(num<=100)
+{
+for(i = 2;i<num;i++)
+{
+if((num%i)==0)
+{
+flag=0;
+}
+}
+if(flag==1)
+{
+prime++;
+}
+num++;
+flag=1;
+}
+for(i=1;i<100;i++)
+{
+if(i%2==0)
+{
+even++;
+}
+else
+{
+odd++;
+}
+}
+document.write(“The no. of prime number between 1 to 100 are “+prime+” <br>”);
+document.write(“The no. of even number between 1 to 100 are “+even+” <br>”);
+document.write(“The no. of odd number between 1 to 100 are “+odd+” <br>”);
+</script>
+</body>
+</html>
